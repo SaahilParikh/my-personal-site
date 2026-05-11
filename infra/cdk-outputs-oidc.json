@@ -1,0 +1,13 @@
+{
+  "SaahilSiteStack": {
+    "DistributionDomain": "d2twi55zinch83.cloudfront.net",
+    "ExportsOutputRefSiteDistribution3FF9535D7CFA9D06": "E3IXGO1A37VWZN",
+    "BucketName": "saahil.io-site",
+    "DistributionId": "E3IXGO1A37VWZN",
+    "ExportsOutputFnGetAttSiteBucket397A1860ArnB404F589": "arn:aws:s3:::saahil.io-site",
+    "SiteUrl": "https://saahil.io"
+  },
+  "SaahilGithubOidcStack": {
+    "DeployRoleArn": "arn:aws:iam::534886060250:role/my-personal-site-github-deploy"
+  }
+}

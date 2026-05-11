@@ -77,6 +77,6 @@
 }
 
 .card:hover .arrow {
-  transform: translate(2px, -2px);
+  transform: translateX(3px);
   color: var(--accent);
 }
