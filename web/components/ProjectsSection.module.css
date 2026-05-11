@@ -44,3 +44,13 @@
     gap: 1.5rem;
   }
 }
+
+.emptyMessage {
+  font-family: var(--font-fraunces);
+  font-style: italic;
+  font-weight: 300;
+  font-variation-settings: 'opsz' 36;
+  font-size: 1.0625rem;
+  color: var(--muted);
+  margin: 0;
+}

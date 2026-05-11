@@ -1,7 +1,7 @@
 import { Hero } from '@/components/Hero';
 import { ProjectsSection } from '@/components/ProjectsSection';
 import { SiteFooter } from '@/components/SiteFooter';
-import { projects } from '@/data/projects';
+import { getProjectsByCategory } from '@/data/projects';
 import styles from './page.module.css';
 
 const HERO_COPY = {
@@ -16,10 +16,23 @@ const FOOTER_COPY = {
 } as const;
 
 export default function Home() {
+  const sideProjects = getProjectsByCategory('projects');
+  const researchProjects = getProjectsByCategory('research');
+
   return (
     <main className={styles.main}>
       <Hero {...HERO_COPY} />
-      <ProjectsSection id="work" title="Selected work" projects={projects} />
+      <ProjectsSection
+        id="projects"
+        title="Selected projects"
+        projects={sideProjects}
+      />
+      <ProjectsSection
+        id="research"
+        title="Research"
+        projects={researchProjects}
+        emptyMessage="Forthcoming — research notes and longer-form work will live here."
+      />
       <SiteFooter {...FOOTER_COPY} />
     </main>
   );

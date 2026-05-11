@@ -3,6 +3,8 @@ export type ProjectMedia = {
   alt: string;
 };
 
+export type ProjectCategory = 'projects' | 'research';
+
 export type Project = {
   slug: string;
   name: string;
@@ -10,6 +12,7 @@ export type Project = {
   href: string;
   tags: string[];
   year: number;
+  category: ProjectCategory;
   writeup: string;
   media?: ProjectMedia;
 };
@@ -31,6 +34,7 @@ export const projects: readonly Project[] = [
     href: 'https://graphosaurus.com',
     tags: ['typescript', 'graphs', 'visualization'],
     year: 2026,
+    category: 'projects',
     writeup: LIPSUM_WRITEUP,
   },
   {
@@ -41,10 +45,17 @@ export const projects: readonly Project[] = [
     href: 'https://phrasaurus.com',
     tags: ['typescript', 'nlp', 'web'],
     year: 2026,
+    category: 'projects',
     writeup: LIPSUM_WRITEUP,
   },
 ];
 
 export function findProjectBySlug(slug: string): Project | undefined {
   return projects.find((project) => project.slug === slug);
+}
+
+export function getProjectsByCategory(
+  category: ProjectCategory,
+): readonly Project[] {
+  return projects.filter((project) => project.category === category);
 }
