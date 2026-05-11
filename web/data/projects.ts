@@ -27,6 +27,17 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 
 export const projects: readonly Project[] = [
   {
+    slug: 'choose-your-own-adventure',
+    name: 'Choose Your Own Adventure',
+    oneliner:
+      'An AI-powered text adventure — narrative, scene art, and voice narration generated turn by turn, with dice rolls, world agents, and meta-forces competing over the objective.',
+    href: 'https://choose-your-own-adventure.com',
+    tags: ['typescript', 'ai', 'langgraph', 'bedrock'],
+    year: 2026,
+    category: 'projects',
+    writeup: LIPSUM_WRITEUP,
+  },
+  {
     slug: 'distributed-protocol-visualizer',
     name: 'Distributed Protocol Visualizer',
     oneliner:
