@@ -8,6 +8,6 @@
     "SiteUrl": "https://saahil.io"
   },
   "SaahilGithubOidcStack": {
-    "DeployRoleArn": "arn:aws:iam::534886060250:role/my-personal-site-github-deploy"
+    "DeployRoleArn": "arn:aws:iam::534886060250:role/saahil.io-github-deploy"
   }
 }

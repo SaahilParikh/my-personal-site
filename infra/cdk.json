@@ -16,7 +16,7 @@
   "context": {
     "domainName": "saahil.io",
     "githubOwner": "SaahilParikh",
-    "githubRepo": "my-personal-site",
+    "githubRepo": "saahil.io",
     "@aws-cdk/aws-lambda:recognizeLayerVersion": true,
     "@aws-cdk/core:checkSecretUsage": true,
     "@aws-cdk/core:target-partitions": ["aws", "aws-cn"],
